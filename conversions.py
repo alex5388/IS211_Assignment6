@@ -34,13 +34,52 @@ def convertKelvinToFahrenheit(kelvin):
     y = format(x, '.2f')
     return float(y)
 
+def convertMetersToYards(Meter):
+    ''' Yard = Meter * 1.0936'''
+
+    x = Meter * 1.0936
+    y = format(x, '.2f')
+    return float(y)
+
+def convertYardsToMeters(Yard):
+    ''' Meter = Yard/1.0936 '''
+
+    x = Yard/1.0936
+    y = format(x, '.2f')
+    return float(y)
+
+def convertMetersToMiles(Meter):
+    ''' Mile = Meter * 0.00062137 '''
+
+    x = Meter * 0.00062137
+    y = format(x, '.2f')
+    return float(y)
+
+def convertMilesToMeters(Mile):
+    ''' Meter = Mile/.00062137 '''
+
+    x = Mile/.00062137
+    y = format(x, '.2f')
+    return float(y)
+
+def convertYardsToMiles(Yard):
+    ''' Miles = Yard * .00056818 '''
+
+    x = Yard * .00056818
+    y = format(x, '.2f')
+    return float(y)
+
+def convertMilesToYards(Mile):
+    ''' Yard = Mile * 1760 '''
+
+    x = Mile * 1760
+    y = format(x, '.2f')
+    return float(y)
+
 def main():
-    print(convertCelsiusToKelvin(300))
-    print(convertCelsiusToKelvin(200))
-    print(convertCelsiusToKelvin(100))
-    print(convertCelsiusToKelvin(0))
-    print(convertCelsiusToKelvin(-10))
-    print(type(convertCelsiusToKelvin(-10)))
+    print(convertMilesToYards(10))
+    print(convertMilesToYards(100))
+
 
 
 
